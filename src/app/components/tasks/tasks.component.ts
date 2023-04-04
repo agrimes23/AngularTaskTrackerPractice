@@ -9,5 +9,6 @@ import {TASKS} from '../../mock-tasks';
   styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent {
-
+  tasks: Task[] = TASKS;
+  
 }
