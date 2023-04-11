@@ -11,4 +11,8 @@ export class TaskItemComponent {
   @Input()
   task!: Task;
 
+  onDelete() {
+    console.log(123)
+  }
+
 }
