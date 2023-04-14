@@ -1,3 +1,8 @@
 <!-- one way you can loop through the tasks: *ngFor
 <p *ngFor="let task of tasks">{{task.text}}</p> -->
-<app-task-item *ngFor="let task of tasks" [task]="task" (onDeleteTask)="deleteTask(task)"></app-task-item>
+<app-task-item 
+    *ngFor="let task of tasks" 
+    [task]="task" 
+    (onDeleteTask)="deleteTask(task)" 
+    (onToggleReminder)="toggleReminder(task)"
+></app-task-item>
